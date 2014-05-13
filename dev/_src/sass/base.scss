@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+ol, ul, dl {
+	list-style: none;
+}
+
+li {
+	line-height: 1.6;
+}
+
+blockquote {
+	&:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+
+q {
+	&:before, &:after {
+		content: '';
+		content: none;
+	}
+}
+
+/* remember to define focus styles! */
+
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+/* clearfix */
+
+.clearfix {
+	&:after {
+		content: ".";
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+	min-height: 1px;
+}
+
+* {
+	html .clearfix {
+		height: 1px;
+		/*\*/
+		/*/
+		height: auto;
+		overflow: hidden;
+		/**/
+	}
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6, ul, dt {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+div {
+	zoom: 1;
+	/*for IE 5.5-7*/
+	&:after {
+		/*for modern browser*/
+		content: ".";
+		display: block;
+		height: 0px;
+		clear: both;
+	}
+}
+
+p {
+	text-align: left;
+}
+
+/* 汎用スタイル */
+
+.al_right {
+	text-align: right;
+}
+
+.al_left {
+	text-align: left;
+}
+
+.al_center {
+	text-align: center;
+}
+
+.f_left {
+	float: left;
+}
+
+.f_right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* レスポンシブ */
+
+img {
+	max-width: 100%;
+	/* フルードイメージへの対応 */
+	vertical-align: middle;
+	/* 追加箇所 */
+	border: 0;
+	height: auto;
+	width: auto;
+}
+
+/* IE8 max-width バグへの対応 */
+/* .ie8 img {width: auto; height: auto;} */
+
+/* サイトスタイル */
+
+html {
+	font-size: 6.25%;
+}
+
+body {
+	font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W6',Meiryo,'メイリオ','ＭＳ Ｐゴシック','MS PGothic',Verdana,sans-serif;
+	font-size: 100%;
+	color: #818181;
+	font-size: 1.4rem;
+	background: #FFFFFF;
+	line-height: 140%;
+	-webkit-text-size-adjust: 100％;
+	-ms-text-size-adjust: 100%;
+	/* 2 */
+}
+
+/*web fonts*/
+
+.n-fon {
+	font-family: 'Cagliostro', sans-serif;
+}
+
+.s-fon {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+	line-height: 140%;
+}
+
+a {
+	color: #808080;
+	text-decoration: underline;
+	&:hover {
+		color: #808080;
+		text-decoration: none;
+	}
+}
+
+input, select, textarea, label {
+	font-size: 16px;
+}
+
+input {
+	&::-webkit-input-placeholder {
+		color: #bbb;
+	}
+	&:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+		color: #000;
+	}
+}
+
